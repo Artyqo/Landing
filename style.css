@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+                url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 700px;
+    backdrop-filter: blur(6px);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.6);
+    padding: 10px 22px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .bio {
+        font-size: 0.95rem;
+    }
+
+    .social-links a {
+        display: inline-block;
+        margin: 8px 6px;
+    }
+}
